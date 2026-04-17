@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-primary: #faf9f6;
+  --bg-secondary: #f5f3f0;
+  --bg-tertiary: #ede9e3;
+  --text-primary: #2c2c2c;
+  --text-secondary: #5a5a5a;
+  --accent-color: #d4af37;
+  --accent-hover: #ffd700;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Source Serif 4', serif;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --bg-tertiary: #2d2d2d;
+  --text-primary: #f5f5f5;
+  --text-secondary: #cccccc;
+  --accent-color: #ffd700;
+  --accent-hover: #fff176;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
